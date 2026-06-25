@@ -1,0 +1,443 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Montserrat;
+	height: 100vh;
+	background-image: url(./images/porfolio-bg.jpg);	
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*-- Utilities Start --*/
+.bg-trans{
+	background-color: transparent;
+}
+
+.text-paleyellow {
+    color: #faee7b;
+}
+
+.w-85 {
+    width: 85%;
+}
+/*-- Utilities End --*/
+
+/*.hire_forms_cont{
+	border: 1px solid white;
+}
+.mail_cont{
+	border: 1px solid yellow;
+}*/
+
+/*html, body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}*/
+
+#logo{
+	width: 20px;
+	border-radius: 20px;
+}
+
+#nav{
+	background-color: transparent;
+}
+
+.nav-link{
+	font-family: Montserrat;
+	font-weight: 500;
+	font-style: Medium;
+	font-size: 24px;
+	leading-trim: NONE;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #faee7b;
+}
+.nav-link:hover{
+    color: white !important;
+}
+
+/* --footer start-- */
+#footer{
+	background-color: transparent;
+}
+
+.gen-footer{
+    margin: 10px 15px;
+    border-top: 1px solid rgb(37, 37, 37);
+}
+
+.ft-box{
+    padding: 7px 0 0 0;
+}
+
+.img-icon-ft{
+    margin: 0 10px;
+}
+/* --footer end-- */
+
+
+/* --landing end-- */
+#landing{
+	margin-top: -25px;
+}
+
+#landing h4,h1{
+	font-family: Montserrat;
+	font-weight: 600;
+	font-style: SemiBold;
+	leading-trim: NONE;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: #faee7b;
+}
+
+#landing p{
+	font-family: Montserrat;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 24px;
+	leading-trim: NONE;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: grey;
+}
+/* --landing end-- */
+
+/* --Works Start-- */
+.wrk_cont{
+    /* border: 8px solid white; */
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 3vh;
+    pading-bottom: 10vh;
+}
+.wrk_icn{
+    width: 300px;
+    height: 200px;
+    margin-top: 1vh;
+}
+.wrk_desc{
+    /* border: 8px solid white; */
+    text-align: justify;
+    color: #a8a8a8;
+    padding-bottom: 10vh;
+}
+
+.works_main_cont{
+	justify-content: center;
+	justify-items: center;
+}
+/* --Works End-- */
+
+/* --Tools Start-- */
+.tool_main_cont{
+    /* border: 8px solid white; */
+    margin-top:  3vh;
+    margin-bottom: 62vh;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 50px 30px 400px;
+    grid-template-columns: 100px 1fr 100px;
+        grid-template-areas: 
+        "head head head"
+        "head1 head2 head3"
+        "cat_cont cat_cont cat_cont";
+    justify-content: center;
+    justify-items: center;
+}
+.tool_header_cont {
+    /* border: 8px solid rgb(230, 245, 94); */
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+        grid-template-areas: 
+        "head1 head2 head3"
+        "cat_cont cat_cont cat_cont";
+    justify-items: center;
+}
+.tool_header{
+    /* border: 8px solid rgb(230, 245, 94); */
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-style: bold;
+    cursor: pointer;
+    /* margin-top: 20px; */
+    padding: 10px 10px;
+}
+.tool_rd{
+    margin-top: 15px;
+}
+input{
+    display: none;
+}
+input:checked + label .tool_header{
+    background: #a8a8a8;
+    color: #222222;
+    border-radius: 15px;
+}
+#rd_1:checked ~ .tool_cat_cont .tool_data_cont{
+    display: grid;
+}
+#rd_2:checked ~ .tool_cat_cont .tool_prog_cont{
+    display: grid;
+}
+#rd_3:checked ~ .tool_cat_cont .tool_des_cont{
+    display: grid;
+}
+.tool_header:hover{
+    color: #faee7b !important;
+    text-decoration: none;
+}
+.tool_cat_cont{
+    /* border: 8px solid white; */
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7em;
+    /* grid-template-rows: 475px;*/
+    justify-items: center;  
+}
+.tool_subcont {
+    /* border: 8px solid rgb(23, 211, 39); */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3em;
+    display: none;
+}
+/* --Tools End-- */
+
+/* --Hire Start-- */
+.contact_main_cont{
+	justify-content: center;
+	justify-items: center;
+}
+.hire_forms_cont{
+    display: grid;
+    justify-content: center; 
+    justify-items: center;
+}
+
+.mail_cont{
+    margin-left: 50px;
+    width: 30vw;
+}
+
+.map_size{
+    margin-top: 50px;
+	height: 60vh;
+}
+/* --Hire End-- */
+
+/* ----- Responsive Tweaks Start ----- */
+
+@media(min-width: 1200px){
+    .tool_subcont {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 3em;
+    }
+}
+
+@media(min-width: 951px){
+    .wrk_cont{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 400px;
+        grid-template-areas: 
+            "wrk_icn1 wrk_icn2 wrk_icn3 wrk_icn4"
+            "wrk_desc1 wrk_desc2 wrk_desc3 wrk_desc4"
+            "wrk_icn5 wrk_icn6 wrk_icn7 wrk_icn8"
+            "wrk_desc5 wrk_desc6 wrk_desc7 wrk_desc8";
+        gap: 2em;
+        margin: 15px 50px 0 50px;
+    }
+    .tool_header_cont{
+        gap: 19vw;
+    }
+    .tool_cat_cont{
+        font-size: 20px;
+    }
+    .tool_subcont {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 3em;
+    }
+    .tool_icn{
+        width: 88px;
+    }
+    .rd_1{
+        margin-left: 45vw;
+    }
+    .rd_3{
+        margin-right: 45vw;
+    }
+    .hire_forms_cont{
+        grid-template-columns: 2fr 5fr;
+        gap: 10em;
+    }
+    .map_size{
+        width: 50vw;
+    }
+    .map_cont{
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 950px){
+    .works_body{
+        overflow-y: scroll !important;
+        height: 100vh;
+    }
+    .wrk_cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 400px;
+        grid-template-areas: 
+            "wrk_icn1 wrk_icn2"
+            "wrk_desc1 wrk_desc2"
+            "wrk_icn3 wrk_icn4"
+            "wrk_desc3 wrk_desc4"
+            "wrk_icn5 wrk_icn6"
+            "wrk_desc5 wrk_desc6"
+            "wrk_icn7 wrk_icn8"
+            "wrk_desc7 wrk_desc8";
+        gap: 2em;
+        margin: 15px 50px 0 50px;
+    }
+    .tool_header_cont{
+        gap: 15vw;
+    }
+    .tool_icn{
+        width: 88vw;
+    }
+    .tool_cat_cont{
+        font-size: 15px;
+    }
+    .tool_subcont {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 3em;
+    }
+    .rd_1{
+        margin-left: 45vw;
+    }
+    .rd_3{
+        margin-right: 45vw;
+    }
+    .hire_forms_cont{
+        grid-template-columns: 2fr 5fr;
+        gap: 10em;
+    }
+    .map_cont{
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 950px) and (min-width: 641px){
+	.tool_subcont {
+	    grid-template-columns: 1fr 1fr 1fr 1fr;
+	    gap: 3em;
+	}
+	.tool_icn{
+	    width: 12vw;
+	}
+	.hire_forms_cont{
+	    grid-template-columns: 2fr 5fr;
+	    gap: 2em;
+	}
+	.mail_cont{
+	    width: 40vw;
+	}
+}
+
+@media(max-width: 640px){
+    .wrk_cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 400px;
+        grid-template-areas: 
+            "wrk_icn1"
+            "wrk_desc1"
+            "wrk_icn2"
+            "wrk_desc2"
+            "wrk_icn3"
+            "wrk_desc3"
+            "wrk_icn4"
+            "wrk_desc4"
+            "wrk_icn5"
+            "wrk_desc5"
+            "wrk_icn6"
+            "wrk_desc6"
+            "wrk_icn7"
+            "wrk_desc7"
+            "wrk_icn8"
+            "wrk_desc8";
+        gap: 2em;
+        margin: 15px 50px 0 50px;
+    }
+    .tool_icn{
+        width: 18vw;
+    }
+    .tool_subcont {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.75em;
+    }
+    .rd_1{
+        margin-left: 30vw;
+    }
+    .rd_3{
+        margin-right: 30vw;
+    }
+    .hire_forms_cont{
+        grid-template-columns: 5fr 3fr;
+        gap: 1em;
+    }
+    .map_size{
+        width: 30vw;
+        height: 60vh;
+    }
+}
+
+@media(max-width: 465px){
+    .tool_header_cont{
+        gap: 0;
+    }
+    .rd_1{
+        margin-left: 0;
+    }
+    .rd_3{
+        margin-right: 0;
+    }
+    .hire_forms_cont{
+        margin-top: -30px;
+        justify-content: center;
+    }
+	.mail_cont{
+	    width: 70vw;
+	}
+    .map_cont{
+    	display: none;
+        margin-right: 20px;
+    }
+}
+/* ----- Responsive Tweaks End ----- */
+
+/* ---Radio button functions Start--- */
+section {
+    display: none;
+}
+
+#landing-tab:checked ~ #landing,
+#works-tab:checked ~ #works,
+#tools-tab:checked ~ #tools,
+#contact-tab:checked ~ #contact {
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
+/* ---Radio button functions End--- */

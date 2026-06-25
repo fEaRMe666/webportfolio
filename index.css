@@ -112,6 +112,57 @@ body{
 /* --landing end-- */
 
 /* --Works Start-- */
+
+.wrk_icn1{
+    grid-area: wrk_icn1;
+}
+.wrk_icn2{
+    grid-area: wrk_icn2;
+}
+.wrk_icn3{
+    grid-area: wrk_icn3;
+}
+.wrk_icn4{
+    grid-area: wrk_icn4;
+}
+.wrk_icn5{
+    grid-area: wrk_icn5;
+}
+.wrk_icn6{
+    grid-area: wrk_icn6;
+}
+.wrk_icn7{
+    grid-area: wrk_icn7;
+}
+.wrk_icn8{
+    grid-area: wrk_icn8;
+}
+
+.wrk_desc1{
+    grid-area: wrk_desc1;
+}
+.wrk_desc2{
+    grid-area: wrk_desc2;
+}
+.wrk_desc3{
+    grid-area: wrk_desc3;
+}
+.wrk_desc4{
+    grid-area: wrk_desc4;
+}
+.wrk_desc5{
+    grid-area: wrk_desc5;
+}
+.wrk_desc6{
+    grid-area: wrk_desc6;
+}
+.wrk_desc7{
+    grid-area: wrk_desc7;
+}
+.wrk_desc8{
+    grid-area: wrk_desc8;
+}
+
 .wrk_cont{
     /* border: 8px solid white; */
     display: grid;
@@ -139,6 +190,23 @@ body{
 /* --Works End-- */
 
 /* --Tools Start-- */
+
+.head{
+    grid-area: head;
+}
+.tool_head1{
+    grid-area: tool_head1;
+}
+.tool_head2{
+    grid-area: tool_head2;
+}
+.tool_head3{
+    grid-area: tool_head3;
+}
+.cat_cont{
+    grid-area: cat_cont;
+}
+
 .tool_main_cont{
     /* border: 8px solid white; */
     margin-top:  3vh;
@@ -146,28 +214,16 @@ body{
     display: grid;
     grid-template-columns: 100px 1fr 100px;
     grid-template-rows: 50px 30px 400px;
-    grid-template-columns: 100px 1fr 100px;
         grid-template-areas: 
         "head head head"
-        "head1 head2 head3"
+        "tool_head1 tool_head2 tool_head3"
         "cat_cont cat_cont cat_cont";
     justify-content: center;
-    justify-items: center;
-}
-.tool_header_cont {
-    /* border: 8px solid rgb(230, 245, 94); */
-    background-color: #222222;
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
-        grid-template-areas: 
-        "head1 head2 head3"
-        "cat_cont cat_cont cat_cont";
     justify-items: center;
 }
 .tool_header{
     /* border: 8px solid rgb(230, 245, 94); */
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-style: bold;
     cursor: pointer;
@@ -431,7 +487,7 @@ section {
 }
 
 #landing-tab:checked ~ #landing,
-#works-tab:checked ~ #works,
+#works-tab:checked ~ #projects,
 #tools-tab:checked ~ #tools,
 #contact-tab:checked ~ #contact {
     display: block;
